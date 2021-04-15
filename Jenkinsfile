@@ -14,7 +14,7 @@
                 }
                 steps {
                     script {
-                        app = docker.build("<DOCKER_HUB_USERNAME>/train-schedule")
+                        app = docker.build("thwalker/train-schedule")
                         app.inside {
                             sh 'echo $(curl localhost:8080)'
                         }
